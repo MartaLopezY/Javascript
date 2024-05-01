@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio7</title>
+    <script src="ejercicio7.js" defer></script>
+    <style>
+      body{
+        margin-left: 20%;
+      }
+      table, th, td {
+         border: 1px solid;
+         border-collapse: collapse;
+         text-align: center;
+         }  
+         thead{
+          background-color: lightblue;
+         }
+      .destacado{
+        background-color: lightsalmon;
+      }
+      #paginacion button {
+    margin-right: 4%;
+    background-color: #E0F0F6;
+
+}
+      button{
+        justify-content:center;
+        background-color: #E0F0F6;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <input type="text" id="filtroNacionalidad" placeholder="Filtrar por nacionalidad">
+      <button id="verTodosFiltrados">Ver todos los pilotos</button><br/><br/>
+      <button id="ordenarPorNombre">Ordenar por Nombre</button>
+      <button id="ordenarPorEquipo">Ordenar por Equipo</button><br/><br/>
+      <table id="tablaPilotos">
+          <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Equipo</th>
+                  <th>Número</th>
+                  <th>Nacionalidad</th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table><br/>
+      <div id="paginacion"></div><br/>
+      <button id="verTodos">Ver Todos los Datos</button>
+      <button id="paginacionTresEnTres">Paginar de 3 en 3</button>
+</body>
+</html>

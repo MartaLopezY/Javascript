@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ejercicio7.js"></script>
+    <style>
+      .error {
+        border: solid 2px red;
+      }
+      #mensajeError {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="datosProcesados.php" method="post" id="formulario">
+      <fieldset>
+        <legend>Envios</legend>
+        <label>Fecha de creación: <br />
+          <input type="text" id="fecha" name="fecha" pattern="^(0[1-9]|[1][0-9]|3[2])/(0[1-9]|1[0-2])/[0-9]{4}$" required /> 
+        </label><br/>
+        <label>Empleado: <br/>
+          <input type="text"id="empleado" name="empleado"  pattern="[A-Z]{2}\W\d{4}" required/>
+        </label><br/>
+        <label> Destinatario: <br />
+          <input type="text" id="destinatario" name="destinatario"pattern="[A-Z]{2,3}_[A-Z][a-z]*:\d{4}" required/> 
+        </label><br/>
+        <label> Peso en gramos: <br />
+          <input type="number"  id="peso"  name="peso" min="100" max="5000" required/> 
+        </label ><br />
+        <label> Número de cuenta: <br />
+          <input type="text"  id="cuenta"name="cuenta" pattern="[A-Z]{2}\d{22}" required/>
+           </label><br/><br/>
+        <input type="submit" value="Enviar" id="enviar" />
+        <p id="mensajeError"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

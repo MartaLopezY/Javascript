@@ -1,0 +1,39 @@
+body{
+    background: rgb(253,170,45);
+    background: radial-gradient(circle, rgba(253,170,45,1) 0%, rgba(244,239,99,1) 100%);
+    font-family: sans-serif;  
+    margin-top: 2%;
+    margin-left: 22%;
+    margin-right: 25%;
+}
+main{
+    border:1px solid black;
+    margin: 30px auto;
+    display:flex;
+    align-items: center;
+}
+#juego{
+    background-color: rgba(255,255,255,0.2);
+    padding:0 10px 10px 10px;
+    border-radius: 8px;
+}
+button{
+    height: 200px;
+    width:200px;
+}
+button:hover{
+    cursor: pointer;
+}
+img{
+    width: 80%;
+    display: block;
+    margin: 10px;
+}
+#control{
+    margin-left: 2%;
+}
+#cargar{
+    height: 30px;
+    width:150px;
+    background-color:beige
+}

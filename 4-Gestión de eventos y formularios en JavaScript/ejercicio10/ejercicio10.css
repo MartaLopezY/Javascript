@@ -1,0 +1,89 @@
+body{
+            font-size: 13px;
+            line-height: 19px;
+            color:#111;
+            font-family: Arial,sans-serif;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+input[type=text],input[type=password]{
+  width: 100%;
+  padding: 6px 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+   accent-color: #ff6200;
+}
+fieldset {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  margin:5% 40% 5% 40%;
+  
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #ff6200;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#dia,#mes,#year{
+  width: 30%;
+}
+
+a{
+    color:rgb(0, 0, 190);
+}
+i{
+    color:#ff6200;
+    font-size: 1.2em;
+} 
+p{margin-right: 15px;}
+
+#bienvenida{
+  visibility: visible;
+}
+#clave input {
+  display: flex;
+  width: 1cm;
+  height: 1cm;
+  text-align: center;
+ }
+#digitos{
+  display: grid;
+  grid-template-columns: repeat(5, 1cm);
+  grid-gap: 10px;
+text-align: center;
+}
+#digitos button {
+  width: 1cm;
+  height: 1cm;
+  border-radius: 4px;
+  color:#ff6200;
+  background-color: #F0F2F2; 
+  border:solid 1px #ff6200;
+ }
+
+#seguridad{
+  display: none;
+} 
+#formularioClave{
+  padding-left: 10%;
+ 
+}
+#clave input:focus {
+  background-color: #F0F2F2; 
+  border:solid 1px #ff6200;
+ }

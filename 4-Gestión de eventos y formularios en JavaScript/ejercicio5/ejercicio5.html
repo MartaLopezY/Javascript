@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ejercicio5.js"></script>
+    <style>
+      fieldset {
+        border-left: 20%;
+        border-right: 20%;
+      }
+      .error {
+        border: solid 2px  red;
+      }
+      .texterror {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="datosProcesados.php" method="post" id="formulario">
+      <fieldset>
+        <legend>Datos de disco</legend>
+        <label id="textNombre">
+          Nombre de disco: <br />
+          <input type="text" id="nombre" name="nombre" maxlength="20" required /> </label
+        ><br />
+        <label id="textCantante">
+          Grupo de música o cantante: <br />
+          <input type="text" id="cantante" name="cantante" maxlength="20" required /> </label
+        ><br />
+        <label id="textPublicación">
+          Año de publicación: <br />
+          <input type="text" id="publicacion" name="publicacion" pattern="[0-9]{4}" required /> </label
+        ><br />
+
+        <label>
+          Tipo de música: <br />
+          <select id="tipo" name="tipo">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="punk">Punk</option>
+            <option value="indie">Indie</option>
+          </select> </label
+        ><br />
+        <label id="textLocalizacion"> Localización: <br/>
+          <input type="text" id="localizacion" name="localizacion" pattern="[0-9]"/> </label><br />
+        <label><input type="checkbox" id="prestado"  checked="false"/>Prestado</label><br />
+        <input type="submit" value="Enviar" id="enviar" />
+        <p id="mensajeError"></p>
+      </fieldset>
+    </form>
+  </body>
+</html>

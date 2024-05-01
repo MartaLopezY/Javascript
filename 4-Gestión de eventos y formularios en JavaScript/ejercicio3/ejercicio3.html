@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ejercicio3.js"></script>
+  </head>
+  <body>
+    <form action="#" method="post" id="miFormulario">
+      <label
+        >Dni:<input
+          type="text"
+          name="dni"
+          id="dni"
+          maxlength="8"
+          pattern="[0-9]{8}"
+          title="Introduce un número de 8 cifras"
+          required /></label
+      ><br />
+      <label>Letra:<input type="text" id="letra" readonly/><br /></label>
+    </form>
+    <p id="error"></p>
+  </body>
+</html>

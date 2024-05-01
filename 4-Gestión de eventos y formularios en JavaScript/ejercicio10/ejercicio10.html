@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" type="text/css" href="ejercicio10.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="ejercicio10.js" type="module" defer></script>
+</head>
+<body>
+  <div id="bienvenida">
+     <form id="formulario">
+        <fieldset>
+            <h1>Acceder a tu Área Cliente</h1><br/> 
+          <p> <strong>Elige tu documento:</strong>  <br/>
+      
+          <label for="dni"><input type="radio" id="dni" name="documento" value="dni" checked/>DNI o tarjeta de residencia</label><br />
+         
+          <label for="pasaporte"> <input type="radio" id="pasaporte" name="documento" value="pasaporte" />Pasaporte</label><br />
+         
+      </p>
+      <label for="numero"><strong>Número de documento: </strong></label><br />
+      <input type="text" id="numero" name="numero" placeholder="Número de documento" required/><br>
+    
+      <label for="dia"><strong>Fecha de nacimiento:</strong></label><br/>
+      <input type="number" id="dia" name="dia"placeholder="DD" min="1" max="31"  required />
+      <input type="number" id="mes" name="mes" placeholder="MM" min="1" max="12"  required/>
+       <input type="number" id="year" name="year" placeholder="AAAA" min="1900" max="2023" required/></label>
+      
+     <label><input type="checkbox" id="recordar"/>Recordar <i class="bi bi-question-circle"></i></label><br />
+      <input type="submit" value="Entrar" id="enviar"/><br/>
+      <p><i class="bi bi-chevron-right"></i>Más información sobre seguridad </p><br/><br/>
+     </fieldset>
+    </form>
+  </div>
+  <div id="seguridad">        
+        <form>
+          <fieldset>
+            <div id="formularioClave">
+              <h1>Clave de seguridad</h1><br/> 
+              <p>Completa las posiciones que faltan de tu clave de seguridad: <i class="bi bi-question-circle"></i></p><br />  
+              <table id="clave">
+            <tr >
+            <td>  <label >  <input type="password" id="digito0" maxlength="1" readonly/></label>  </td>
+               <td><label >  <input type="password" id="digito1" maxlength="1" readonly/> </label></td>   
+               <td><label >  <input type="password" id="digito2" maxlength="1" readonly/> </label></td>
+               <td><label >  <input type="password" id="digito3" maxlength="1" readonly/> </label></td>
+              <td> <label >  <input type="password" id="digito4" maxlength="1" readonly/> </label></td>
+              <td> <label >  <input type="password" id="digito5" maxlength="1" readonly/> </label></td>
+            </tr>
+          </table>
+            <div id="digitos"> 
+                  <table>
+                    <tr>
+                      <td> <button id="0" type="button"></button> </td>
+                      <td> <button id="1" type="button"></button> </td>
+                      <td> <button id="2" type="button"></button> </td>
+                      <td> <button id="3" type="button"></button> </td>
+                      <td> <button id="4" type="button"></button> </td>    
+                    </tr>
+                    <tr>
+                      <td> <button id="5" type="button"></button> </td>
+                      <td> <button id="6" type="button"></button> </td>
+                      <td> <button id="7" type="button"></button> </td>
+                      <td> <button id="8" type="button"></button> </td>
+                      <td> <button id="9" type="button"></button> </td>
+                    </tr>
+                  </table>
+            </div>
+          <p><i class="bi bi-chevron-right"></i>No recuerdo mi clave </p>
+          <p><i class="bi bi-chevron-right"></i>Más información sobre seguridad </p>
+        </div>
+          </fieldset>
+        </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ejercicio8.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <style>
+      input[type="radio"] select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      fieldset {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin: 5% 25% 5% 25%;
+      }
+      h1{
+        padding: 20px;
+        margin: 0% 25% 0% 25%;
+      }
+      input[type="submit"], #limpiar{
+        width: 100%;
+        background-color: red;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+ 
+      .bi-check-lg{
+        color:green;
+      }
+      .bi-x-lg,#aviso{
+        color:red;
+      }
+      .error{
+        background-color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test de cultura general</h1>
+    <form id="formulario">
+      <fieldset>
+       <div id="0"> 
+          <p>
+            <i id="check0"></i>
+           
+            <strong>1.¿En qué año terminó la II Guerra Mundial?</strong>
+          </p>
+          <input type="radio" id="1945" name="guerraMund" value="a" />
+          <label for="1945">a-1945</label><br />
+          <input type="radio" id="1944" name="guerraMund" value="b" />
+          <label for="1944">b-1944</label><br />
+          <input type="radio" id="1946" name="guerraMund" value="c" />
+          <label for="1946">c-1946</label><br /><br />
+      </div>
+       <div id="1"> 
+           <p>
+           <i id="check1"></i>
+            <strong>2.¿En qué año llegó Cristobal Colón a América?</strong>
+          </p>
+          <input type="radio" id="1612" name="colon" value="a" />
+          <label for="1612">a-1612</label><br />
+          <input type="radio" id="1492" name="colon" value="b" />
+          <label for="1492">b-1492</label><br />
+          <input type="radio" id="1392" name="colon" value="c" />
+          <label for="1392">c-1392</label><br /><br />
+      </div>
+      <div id="2"> 
+          <p>
+          <i id="check2"></i>
+            <strong>3.¿Cúal es el tercer planeta del sistema solar?</strong>
+          </p>
+          <input type="radio" id="Venus" name="planeta" value="a" />
+          <label for="Venus">a-Venus</label><br />
+          <input type="radio" id="Marte" name="planeta" value="b" />
+          <label for="Marte">b-Marte</label><br />
+          <input type="radio" id="Tierra" name="planeta" value="c" />
+          <label for="Tierra">c-Tierra</label><br /><br />
+      </div>
+      <div id="3"> 
+          <p>
+          <i id="check3"></i>
+            <strong>4.¿Cúal es la moneda de Reino Unido?</strong>
+          </p>
+          <input type="radio" id="Euro" name="moneda" value="a" />
+          <label for="Euro">a-Euro</label><br />
+          <input type="radio" id="Libra" name="moneda" value="b" />
+          <label for="Libra">b-Libra</label><br />
+          <input type="radio" id="Dolar" name="moneda" value="c" />
+          <label for="Dolar">c-Dolar</label><br /><br />
+      </div>
+          <input type="submit" value="Enviar" id="enviar" />
+          <p id="aviso"></p>
+      <button id="limpiar">Nuevo intento</button>
+      </fieldset>
+    </form>
+   <br/>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+    [
+      {
+        "nombre":"Hacer la colada",
+        "realizada": false
+      },
+      {
+        "nombre": "Preparar la cena",
+        "realizada": false   
+      },
+      {
+        "nombre": "Tirar la basura",
+        "realizada": false
+      }
+    ]
+    

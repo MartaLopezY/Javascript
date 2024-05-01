@@ -1,0 +1,38 @@
+    [
+      {
+        "Nombre": "Equipo A",
+        "PartidosJugados": 20,
+        "PartidosGanados": 12,
+        "PartidosPerdidos": 4,
+        "PartidosEmpatados": 6
+      },
+      {
+        "Nombre": "Equipo B",
+        "PartidosJugados": 20,
+        "PartidosGanados": 5,
+        "PartidosPerdidos": 6,
+        "PartidosEmpatados": 9
+      },
+      {
+        "Nombre": "Equipo C",
+        "PartidosJugados": 19,
+        "PartidosGanados": 8,
+        "PartidosPerdidos": 5,
+        "PartidosEmpatados": 6
+      },
+      {
+        "Nombre": "Equipo D",
+        "PartidosJugados": 20,
+        "PartidosGanados": 8,
+        "PartidosPerdidos": 8,
+        "PartidosEmpatados": 4
+      },
+      {
+        "Nombre": "Equipo E",
+        "PartidosJugados": 19,
+        "PartidosGanados": 5,
+        "PartidosPerdidos": 4,
+        "PartidosEmpatados": 10
+      }
+    ]
+    
